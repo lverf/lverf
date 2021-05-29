@@ -9,7 +9,42 @@ top: 30%;
 left: 5%;
 width: 60px;
 }
+input[type=text],input[type=tel], select, textarea {
+  width: 100%; 
+  font-size: 40px;
+  padding: 30px; 
+  border: 2px solid #ccc;
+  border-radius: 10px; 
+  box-sizing: border-box; 
+  margin-top: 20px; 
+  margin-bottom: 40px;
+  resize: vertical;
+  font-family: monospace;
+}
+
+input[type=submit] {
+  background-color: lightseagreen;
+  color: white;
+  font-size: 60px;
+  padding: 32px 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: teal;
+}
+
+.form {
+  color: black;
+  border-radius: 15px;
+  background-color: #f2f2f2;
+  padding: 40px;
+  font-size: 60px;
+}
 .sidenav {
+  overflow: hidden;
   padding-top: 20%;
   height: 100%;
   width: 0;
