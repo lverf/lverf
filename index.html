@@ -5,7 +5,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css"> 
   <title> Live View Educational Research Foundation </title> 
-  <script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  window.scroll({
+  top: 1000, 
+  left: 0, 
+  behavior: 'smooth'
+});
+
+
+window.scrollBy({ 
+  top: 250, 
+  left: 0, 
+  behavior: 'smooth' 
+});
+
+document.getElementById('el').scrollIntoView({
+  behavior: 'smooth'
+})
 function openNav() {
   document.getElementById("mySidenav").style.width = "50%";
 }
@@ -20,16 +37,15 @@ function tog(x) {
   var btnText = document.getElementById(Btn);
 
   if (divs.style.height === "auto") {
-    divs.style.height = "110vh";
+    divs.style.height = "100vh";
     btnText.innerHTML = "READ MORE";
   } else {
     divs.style.height = "auto";
     btnText.innerHTML = "READ LESS";
       }
 }
-
-
 </script> 
+
  </head> 
  <body> 
   <div id="header"> 
@@ -37,6 +53,11 @@ function tog(x) {
    <h1> Live View Educational Research Foundation </h1> 
    <p></p> 
   </div> 
+  <img class="slide" src="image/IMG1.jpg">  </img>
+  <img class="slide" src="image/IMG2.jpg">  </img>
+  <img class="slide" src="image/IMG3.jpg">  </img>
+  <img class="slide" src="image/IMG4.jpg">  </img>
+  <img class="slide" src="image/IMG5.jpg">  </img>
   <div id="div1" class="div div1"> 
    <h2> Know us </h2> 
    <p> You have worked hard to reach your dreams where you are now. You know you have the potential to be amongst the best are in your field. You need to make a right decision about your next steps to achieve your goals. </p> 
@@ -216,7 +237,9 @@ function tog(x) {
     <input type="submit" value="Submit">
 </div>
 </div>
-
+<script>  
+w3.slideshow(".slide", 2000);
+</script>
   <footer> 
    <p class="programminghero">Learned and developed this site with <a href="http://www.programming-hero.com">Programming Hero</a></p> 
   </footer>

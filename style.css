@@ -1,14 +1,27 @@
 
+html {
+    scroll-behavior: smooth !important;
+}
 body{
 font-size: 25px;
 color: gray;
 font-family: 'Nunito', sans-serif;
 }
+div{transition: 1s;}
 .burger img{
 position: absolute;
 top: 30%;
 left: 5%;
 width: 60px;
+}
+.slide{
+width: 100%;
+position: absolute;
+top: 15%;
+left: 9%;
+border-radius: 10px;
+box-shadow: 10px 10px 20px rgba(0,0,0,.3);
+transition: 1s;
 }
 input[type=text],input[type=tel], select, textarea {
   width: 100%; 
@@ -116,22 +129,21 @@ left: 0;
 ol{margin-left: 20px;}
 ul{margin: 20px auto 20px auto;}
 .div{
-transition: 1s;
 position: relative;
-height: 110vh;
+height: 100vh;
 font-size: 60px;
 overflow: hidden;
 width: 100vw;
-padding-top: 20%;
-padding-bottom: 10%;
 margin-left: -2.5%;
 padding: 10%;
+padding-top: 15%;
 color: white;
 box-shadow: 0 0px 100px 60px rgba(0,0,0,.5);
 }
 
 .more{
 z-index: 3;
+font-weight: 100;
 box-shadow: 10px 10px 20px rgba(0,0,0,.2);
 border-radius: 10px;
 position: absolute;
@@ -143,9 +155,17 @@ padding: 20px;
 margin-top: 30px;
 transition: 1s;
 }
-.div1{margin-top: 60vh;background: orange;}
+.div1{
+box-shadow: 0 0 0 rgba(0,0,0,.0);
+margin-top: 50vh;
+background: orange;
+}
 .div2{background: limegreen;}
 .div3{background: tomato;}
 .div4{background: mediumslateblue;}
 .div5{background: chocolate;}
 .div6{background: steelblue;}
+
+
+
+
