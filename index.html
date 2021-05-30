@@ -13,6 +13,22 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+function tog(x) {
+  var div = "div"+x
+  var divs = document.getElementById(div);
+  var Btn = "btn"+x
+  var btnText = document.getElementById(Btn);
+
+  if (divs.style.height === "auto") {
+    divs.style.height = "110vh";
+    btnText.innerHTML = "READ MORE";
+  } else {
+    divs.style.height = "auto";
+    btnText.innerHTML = "READ LESS";
+      }
+}
+
+
 </script> 
  </head> 
  <body> 
@@ -21,31 +37,32 @@ function closeNav() {
    <h1> Live View Educational Research Foundation </h1> 
    <p></p> 
   </div> 
-  <div id="home" class="div div1"> 
+  <div id="div1" class="div div1"> 
    <h2> Know us </h2> 
    <p> You have worked hard to reach your dreams where you are now. You know you have the potential to be amongst the best are in your field. You need to make a right decision about your next steps to achieve your goals. </p> 
-   <p> Success point is a professional career guidance counselor and study abroad consultant, who has personally given career counselling, job counselling and parrential counselling. We have best schools, colleges and universities in India. Will differents types of courses like </p> 
+   <p> Success point is a professional career guidance counselor and study abroad consultant, who has personally given career counselling, job counselling and parrential counselling. We have best schools, colleges and universities in India. Will differents types of courses like</p> 
    <ul> 
-    <li> Computing technology </li> 
+    <li> Computing technology </li>
     <li> Engineering </li> 
     <li> Management </li> 
     <li> Medical Science </li> 
     <li> Bio technology </li> 
     <li> Agricultural Science </li> 
    </ul> 
-   <p> Choose your right path in our experienced guidance to make your future. </p> 
+   <p> Choose your right path in our experienced guidance to make your future. </span></p> 
+  <p id="btn1" class="more" onclick="tog(1)"> READ MORE </p>
   </div> 
   <div id="mySidenav" class="sidenav"> 
    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
-   <a href="#home">Home</a> 
-   <a href="#course">Our Courses</a> 
-   <a href="#institute">Institutions</a> 
-   <a href="#preschool"> Pre-school </a>
-   <a href="#center">Education Center</a> 
-   <a href="#feature"> Features </a>
-   <a href="#contact"> Contact us </a>
+   <a href="#div1">Home</a> 
+   <a href="#div2">Our Courses</a> 
+   <a href="#div3">Institutions</a> 
+   <a href="#div4"> Pre-school </a>
+   <a href="#div5">Education Center</a> 
+   <a href="#div6"> Features </a>
+   <a href="#div7"> Contact us </a>
   </div> 
-  <div id="course" class="div div2"> 
+  <div id="div2" class="div div2"> 
    <h2> Our Courses </h2> 
    <ol> 
     <li> Madhyamik Examination </li> 
@@ -88,8 +105,9 @@ function closeNav() {
       <li> Agricultural Science </li> 
      </ul> </li> 
    </ol> 
+   <p id="btn2" class="more" onclick="tog(2)"> READ MORE </p>
   </div> 
-  <div id="institute" class="div div3"> 
+  <div id="div3" class="div div3"> 
    <h2> School, College &amp; University </h2> 
    <h3> School </h3> 
    <ul> 
@@ -126,8 +144,9 @@ function closeNav() {
     <li> Jawaharlal Nehru Technological University (Tamilnadu) </li> 
     <li> Anna University (Tamilnadu) </li> 
    </ul> 
+   <p id="btn3" class="more" onclick="tog(3)"> READ MORE </p>
   </div> 
-  <div id="preschool" class="div div4"> 
+  <div id="div4" class="div div4"> 
    <h2> Pre-School </h2> 
    <h3> বর্ন MALA </h3> 
    <ul> 
@@ -139,7 +158,7 @@ function closeNav() {
     <li> Guidance and councelling </li> 
    </ul> 
    </div>  
-   <div id="center" class="div div5">
+   <div id="div5" class="div div5">
    <h2> Education Center </h2>
    <h3> Excellence Academy </h3> 
    <ul> 
@@ -154,7 +173,7 @@ function closeNav() {
     <li> Yoga &amp; Meditation </li> 
    </ul> 
   </div> 
-  <div id="feature" class="div div6">  
+  <div id="div6" class="div div6">  
   <h2> Features </h2>
   <h4> Activities </h4>
   <ul>
