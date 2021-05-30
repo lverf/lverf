@@ -123,7 +123,7 @@ z-index: 1000;
 font-size: 30px;
 box-shadow: 0 0 30px rgba(0,0,0,.3);
 color: white;
-height: 10vh;
+height: auto;
 text-align: center;
 width: 100%;
 background: LightSeaGreen;
@@ -170,7 +170,7 @@ background: orange;
 .div4{background: mediumslateblue;}
 .div5{background: chocolate;}
 .div6{background: steelblue;}
-.div7{background: white;}
+.div7{background: white;height: auto;}
 
 
 
