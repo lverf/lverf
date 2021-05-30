@@ -133,14 +133,15 @@ box-shadow: 0 0px 100px 60px rgba(0,0,0,.5);
 .more{
 z-index: 3;
 box-shadow: 10px 10px 20px rgba(0,0,0,.2);
-border-radius: 20px;
+border-radius: 10px;
 position: absolute;
 height: auto;
-bottom: -50px;
+bottom: -70px;
 right: 5%;
 background: lightseagreen;
 padding: 20px;
 margin-top: 30px;
+transition: 1s;
 }
 .div1{margin-top: 60vh;background: orange;}
 .div2{background: limegreen;}
