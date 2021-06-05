@@ -12,7 +12,7 @@
 
  </head> 
  <body onclick="closeNav()"> 
-  <div id="header"> 
+  <div class="header"> 
    <p> <img class="logo" src="icons/header.jpg">  </img> 
    <p> <span class="burger bx bx-menu" style="font-size:30px;cursor:pointer" onclick="openNav(event)"> </span> </p>
    </p> 
@@ -24,15 +24,13 @@
    <a href="#div4"> Pre-school </a>
    <a href="#div5">Education Center</a> 
    <a href="#div6"> Features </a>
-   <a href="#div7"> Consult us </a>
+   <a href="contact.html"> Consult us </a>
   </div> 
-  <div id="body">
   <img class="slide" src="icons/IMG1.jpg">  </img>
   <img class="slide" src="icons/IMG2.jpg">  </img>
   <img class="slide" src="icons/IMG3.jpg">  </img>
   <img class="slide" src="icons/IMG4.jpg">  </img>
   <img class="slide" src="icons/IMG5.jpg">  </img>
-  </div>
   <div id="div1" class="div div1"> 
    <h2> Know us </h2> 
    <img src="icons/Home.jpg">  </img>
@@ -191,28 +189,7 @@
   </ul>
    <p id="btn6" class="more" onclick="tog(6)"> READ MORE </p>
   </div>
-  <div id="div7" class="div div7">
-<div class="form">  
-    <h2> Consult us </h2>
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <br><label for="lname">Last Name</label></br>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="ph"> Phone No. </label>
-    <input type="tel" id="ph" name="ph" placeholder="Your contact no.">  </input>
-    
-    <label for="address"> Address </label>
-    <input type="text" id="address" name="adress" placeholder="Enter your home address">  </input>
-    
-    <label for="subject">Query</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:400px"></textarea>
-
-    <input type="submit" value="Submit">
-</div>
-</div>
-</div>
+  <div class="div div7">  </div>
 <script>  
 w3.slideshow(".slide", 2000);
 </script>
