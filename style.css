@@ -8,11 +8,13 @@ color: gray;
 font-family: 'Nunito', sans-serif;
 }
 div{transition: 1s;}
-.burger img{
+.burger{
 position: absolute;
-top: 20%;
-left: 5%;
-width: 60px;
+top: 30%;
+Right: 5%;
+}
+.logo{
+width: 90%;
 }
 .slide{
 width: 100%;
@@ -124,9 +126,9 @@ font-size: 30px;
 box-shadow: 0 0 30px rgba(0,0,0,.3);
 color: white;
 height: auto;
-text-align: center;
+text-align: left;
 width: 100%;
-background: LightSeaGreen;
+background: #2b3354;
 position: fixed;
 top: 0;
 left: 0;
