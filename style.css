@@ -14,12 +14,17 @@ top: 30%;
 Right: 5%;
 }
 .logo{
-width: 90%;
+height: 60px;
+width: auto;
+margin: 0;
+position: absolute;
+top: 0;
+left: 0;
 }
 .slide{
 width: 70%;
 position: absolute;
-top: 20%;
+top: 70px;
 left: 15%;
 border-radius: 10px;
 box-shadow: 5px 5px 20px rgba(0,0,0,.3);
@@ -67,7 +72,7 @@ input[type=submit]:hover {
 }
 .sidenav {
   overflow: hidden;
-  padding-top: 20%;
+  padding-top: 65px;
   height: 100%;
   width: 0;
   position: fixed;
@@ -118,7 +123,7 @@ z-index: 1000;
 font-size: 30px;
 box-shadow: 0 0 30px rgba(0,0,0,.3);
 color: white;
-height: auto;
+height: 60px;
 text-align: left;
 width: 100%;
 background: #2b3354;
@@ -136,7 +141,7 @@ overflow: hidden;
 width: 85%;
 margin-left: -2.5%;
 padding: 10%;
-padding-top: 15%;
+padding-top: 20px;
 color: white;
 box-shadow: 0 0px 100px 60px rgba(0,0,0,.5);
 }
@@ -167,5 +172,11 @@ background: orange;
 .div6{background: steelblue;}
 .div7{background: white;height: auto;}
 
-
+@media (min-width:1025px){
+.div1{
+.div img{
+width: 40%;
+margin: 30px 30%;
+}
+}
 
