@@ -7,58 +7,31 @@
   <link rel="stylesheet" type="text/css" href="style.css"> 
   <title> Life View Educational Research Foundation </title> 
   <script src="https://www.w3schools.com/lib/w3.js"></script>
-<script>
-  window.scroll({
-  top: 1000, 
-  left: 0, 
-  behavior: 'smooth'
-});
-
-
-window.scrollBy({ 
-  top: 250, 
-  left: 0, 
-  behavior: 'smooth' 
-});
-
-document.getElementById('el').scrollIntoView({
-  behavior: 'smooth'
-})
-function openNav() {
-  document.getElementById("mySidenav").style.width = "50%";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-function tog(x) {
-  var div = "div"+x
-  var divs = document.getElementById(div);
-  var Btn = "btn"+x
-  var btnText = document.getElementById(Btn);
-
-  if (divs.style.height === "auto") {
-    divs.style.height = "100vh";
-    btnText.innerHTML = "READ MORE";
-  } else {
-    divs.style.height = "auto";
-    btnText.innerHTML = "READ LESS";
-      }
-}
-</script> 
+<script src="script.js"></script> 
 
  </head> 
- <body> 
+ <body onclick="closeNav()"> 
   <div id="header"> 
    <p> <img class="logo" src="icons/header.jpg">  </img> 
-   <p> <span class="burger bx bx-menu" style="font-size:80px;cursor:pointer" onclick="openNav()"> </span> </p>
+   <p> <span class="burger bx bx-menu" style="font-size:80px;cursor:pointer" onclick="openNav(event)"> </span> </p>
    </p> 
   </div> 
+  <div id="mySidenav" class="sidenav" onclick="event.stopPropagation()"> 
+   <a href="#div1">Home</a> 
+   <a href="#div2">Our Courses</a> 
+   <a href="#div3">Institutions</a> 
+   <a href="#div4"> Pre-school </a>
+   <a href="#div5">Education Center</a> 
+   <a href="#div6"> Features </a>
+   <a href="#div7"> Consult us </a>
+  </div> 
+  <div id="body">
   <img class="slide" src="icons/IMG1.jpg">  </img>
   <img class="slide" src="icons/IMG2.jpg">  </img>
   <img class="slide" src="icons/IMG3.jpg">  </img>
   <img class="slide" src="icons/IMG4.jpg">  </img>
   <img class="slide" src="icons/IMG5.jpg">  </img>
+  </div>
   <div id="div1" class="div div1"> 
    <h2> Know us </h2> 
    <img src="icons/Home.jpg">  </img>
@@ -75,16 +48,7 @@ function tog(x) {
    <p> Choose your right path in our experienced guidance to make your future. </span></p> 
   <p id="btn1" class="more" onclick="tog(1)"> READ MORE </p>
   </div> 
-  <div id="mySidenav" class="sidenav"> 
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> 
-   <a href="#div1">Home</a> 
-   <a href="#div2">Our Courses</a> 
-   <a href="#div3">Institutions</a> 
-   <a href="#div4"> Pre-school </a>
-   <a href="#div5">Education Center</a> 
-   <a href="#div6"> Features </a>
-   <a href="#div7"> Consult us </a>
-  </div> 
+  
   <div id="div2" class="div div2"> 
    <h2> Our Courses </h2> 
    <img src="icons/course.jpg">  </img>
@@ -245,6 +209,7 @@ function tog(x) {
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:400px"></textarea>
 
     <input type="submit" value="Submit">
+</div>
 </div>
 </div>
 <script>  
