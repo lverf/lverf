@@ -37,30 +37,35 @@ margin: 10% 5%;
 border-radius: 10px;
 }
 input[type=text],input[type=tel], select, textarea {
-  width: 90%; 
+  width: 100%; 
   font-size: 12px;
-  padding: 10px; 
-  border: 2px solid #ccc;
+  padding: 20px; 
+  border: 1px solid #ccc;
   border-radius: 5px; 
   box-sizing: border-box; 
   margin-top: 5px; 
   margin-bottom: 10px;
   resize: vertical;
   font-family: monospace;
+  outline: none;
+  box-shadow: inset 0px 0px 5px rgba(0,0,0,.1);
 }
 
 input[type=submit] {
-  background-color: lightseagreen;
+  margin-top: 15px;
+  background-color: #2b3354;
   color: white;
   font-size: 20px;
   padding: 12px 15px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
+  text-align: center;
   cursor: pointer;
+  width: 100%;
 }
 
 input[type=submit]:hover {
-  background-color: teal;
+  background-color: #2b3370;
 }
 
 .form {
@@ -72,6 +77,7 @@ input[type=submit]:hover {
   font-size: 15px;
   margin: 70px 5%;
 }
+.form label{color: #2b3354;}
 .sidenav {
   overflow: hidden;
   padding-top: 65px;
@@ -173,6 +179,17 @@ background: orange;
 .div5{background: chocolate;}
 .div6{background: steelblue;}
 .div7{background: white;height: auto;}
+
+.pop{
+position: fixed;
+bottom: 5px;
+right: 5px;
+padding: 5px 10px;
+background: #2b3354;
+color: #fff;
+border-radius: 2px;
+z-index: 300;
+}
 @media (max-width: 420px){
 .header{height: 50px}
 .logo{height: 50px;}
