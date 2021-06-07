@@ -2,11 +2,12 @@ document.getElementById('header').addEventListener('click', openNav);
 
 function openNav(event) {
   event.stopPropagation();
-  document.getElementById("mySidenav").style.width = "50%";
+  document.getElementById("mySidenav").classList.add("width");
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mySidenav").classList.remove("width")
+;
 }
 function tog(x) {
   var div = "div"+x
